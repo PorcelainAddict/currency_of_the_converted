@@ -6,17 +6,19 @@ body {
 }
 
 .title {
+  text-align: center;
   justify-content: center;
   font-family: monospace;
   font-size: 20px;
 }
 
 #table1 {
+  justify-content: center;
   align-items: center;
   border: 2px solid;
   padding: 20px 300px 20px 300px;
   background-color: white; opacity: 0.75;
-  margin: 50px 50px 50px 50px;
+  margin: 50px 50px 50px 150px;
 }
 
 #table2 {
@@ -25,5 +27,5 @@ body {
   border: 2px solid;
   padding: 20px 300px 20px 300px;
   background-color: white; opacity: 0.75;
-  margin: 50px 50px 50px 50px;
+  margin: 50px 50px 50px 140px;
 }
