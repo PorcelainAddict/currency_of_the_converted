@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Currency App</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="./js/bundle.js"></script>
+</head>
+<div class="title">
+  <h1>〠 Currency of the Converted 〠</h1>
+</div>
+<body>
+
+  <div id="app">
+
+    <table id="table1">
+      <tbody>
+        <tr>
+          <td>
+            <label for="EUR">Amount of Euros</label>
+            <input type="number" name="EUR" value="1" v-model.number="baseAmount">
+            <select id="table1" v-model.number="rate">
+              <option disabled value="">Select a currency</option>
+              <option v-for="(value, key) in currencies" :value=value>{{key}}</option>
+            </select>
+            <p>{{exRatedMoney}}</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <table id="table2">
+      <tbody>
+        <tr>
+          <td>
+            <label for="currency_two">Currency to Exchange</label>
+            <input type="number" name="currency" value="1" v-model.number="baseAmount_the_second">
+            <select id="table2" v-model.number="rate_the_second">
+              <option disabled value="">Select a currency</option>
+              <option v-for="(value, key) in currencies" :value=value>{{key}}</option>
+            </select>
+            <p>{{currencyConverter}}</p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+  </div>
+</body>
+</html>
